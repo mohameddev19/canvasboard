@@ -1,0 +1,122 @@
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 6px;
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar-thumb{
+    background: #000000;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+.row{
+    width: 100% !important;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+}
+body > div{
+    width: 100%;
+}
+#top{
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    overflow-x: auto;
+}
+#top img{
+    opacity: .8;
+    width: 3rem;
+    margin: .5rem;
+    user-select: none;
+}
+#board{
+    width: 100%;
+    height: calc(100% - 10rem);
+    overflow: hidden;
+}
+#canvas{
+    height: 100%;
+    cursor: crosshair;
+}
+#btm{
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    overflow-x: auto;
+}
+#btm img{
+    opacity: .8;
+    width: 3rem;
+    margin: .5rem;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 0 .1rem .1rem rgba(104, 104, 104, 0.6);
+}
+#color{
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+}
+#clear_btn{
+    display: none;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+}
+#range{
+    display: none;
+    position: absolute;
+    width: 4rem;
+    height: .6rem;
+    transform: rotate3d(0,0,1,-90deg);
+}
+#pages{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 2rem;
+}
+#shape{
+    display: none;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    overflow: hidden;
+}
+#shape_bound{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 3rem);
+    left: calc(50% - 9rem);
+    width: 18rem;
+    height: 6rem;
+    overflow: hidden;
+    box-shadow: 0 0 .1rem .1rem rgba(104, 104, 104, 0.6);
+}
+#shape_bound input{
+    width: 30%;
+    height: 1.5rem;
+}
+#bound_hidde{
+    outline: none;
+    border: none;
+    position: absolute;
+    left: calc(50% - 1.5rem);
+    bottom: 0;
+    width: 3rem;
+}
+#inpt{
+    display: none;
+}
